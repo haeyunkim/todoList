@@ -1,24 +1,24 @@
 body {
-  margin: 0;
+  margin: 0px;
   background-image: url("imgs/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .container {
-  min-height: 100vh;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  min-height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 h2 {
   text-align: center;
-  font-weight: bold;
 }
-.input-area {
+#input-area {
   text-align: center;
 }
-.input-box {
-  width: 300px;
+#task-input {
+  width: 400px;
 }
 .task-area {
   border: 1px solid lightgray;
@@ -26,30 +26,30 @@ h2 {
 }
 .task-tabs {
   display: flex;
-  border-bottom: 1px solid lightgray;
   position: relative;
+  border-bottom: 1px solid lightgray;
 }
 .task-tabs div {
   padding: 1em;
   cursor: pointer;
 }
+
 .task {
   display: flex;
   justify-content: space-between;
-}
-.task div {
   padding: 1em;
 }
-#under-line {
-  width: 60px;
-  height: 4px;
+#line {
+  width: 48px;
+  height: 4px !important;
   background-color: greenyellow;
   padding: 0px;
   position: absolute;
   top: 52px;
   left: 0px;
+  transition: 0.5s;
 }
-#line-through {
+.task-done {
   text-decoration: line-through;
-  background-color: beige;
+  background-color: bisque;
 }

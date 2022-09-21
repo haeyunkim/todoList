@@ -20,20 +20,20 @@
   <body>
     <div class="container">
       <h2>Todo-list</h2>
-      <section class="input-area">
-        <input type="text" placeholder="할 일을 입력하세요" class="input-box" />
+      <section id="input-area">
+        <input type="text" placeholder="오늘의 할일은?" id="task-input" />
         <button id="add-button"><i class="fa-solid fa-circle-plus"></i></button>
       </section>
 
       <section class="task-area">
         <div class="task-tabs">
-          <div id="under-line"></div>
+          <div id="line"></div>
           <div id="tab-all">All</div>
-          <div id="tab-not-done">하는중</div>
+          <div id="tab-not-done">진행중</div>
           <div id="tab-done">Finish</div>
         </div>
 
-        <div class="task-board"></div>
+        <div id="task-board"></div>
       </section>
     </div>
     <script
